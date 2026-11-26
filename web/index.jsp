@@ -16,6 +16,8 @@
 
         <section id="backgroundBox">
             <form action="LoginServlet" method="POST">
+                <h2>Login</h2>
+                
                 <div>
                     <label for="userName">Name:</label>
                     <input type="text" id="userName" name="userName">
