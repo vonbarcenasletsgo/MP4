@@ -9,9 +9,8 @@ and open the template in the editor.
 */
 
 #backgroundBox{
+    /*font-family: sans-serif;
     padding: 40px;
-    border: 1px solid black;
-    border-radius: 8px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     margin: 60px auto;
     text-align: center;
@@ -19,9 +18,44 @@ and open the template in the editor.
     position: relative;
     top: 50%;
     bottom: 50%;
+    width: 340px;*/
+    
+    font-family: sans-serif;
+    text-align: center;
+    box-sizing: border-box;
+    width: 360px;
+    padding: 30px;
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+#backgroundBox label{
+    display: block;
+    font-size: 14px;
+    margin: 16px 0 6px;
+}
 
+#backgroundBox input[type="text"], #backgroundBox input[type="password"]{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 10px 10px 35px;
+    font-size: 15px;
+    font-family: sans-serif;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+}
+
+#backgroundBox h2{
+    margin: 0 0 8px;
+    text-align: center;
+}
+
+#backgroundBox input:focus{
+    outline: 2px solid #3b82f6;
+    border-color: transparent;
+}
 #header, #footer{
     position: fixed;
     left: 0;
@@ -52,10 +86,42 @@ html, body{
 }
 
 body{
+    font-family: sans-serif;
+    box-sizing: border-box;
+    min-height: 100vh;
     padding-top: 7rem;
     padding-bottom: 8rem;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #submitbtn{
     margin: 1rem;
+    font-family: sans-serif;
+}
+
+#btn{
+    font-family: sans-serif;
+    font-size: 15px;
+    width: 70%; 
+    margin-top: 4px; 
+    padding: 12px; 
+    border: 0;   
+    border-radius: 15px; 
+    background: #3b82f6; 
+    color: #fff;   
+    font-size: 15px; 
+    cursor: pointer;
+    transition: transform 0.15s ease, background 0.15s ease;
+}
+
+#btn:hover{
+    transform: scale(1.05);
+    background: #2563eb;
+}
+
+#btn:active{
+    transform: scale(0.98);
 }
