@@ -13,7 +13,7 @@
     </head>
     <body>
         <div id="footer">
-        <p>MP3</p>
+        <p>MP4</p>
         <p>The date is: ${applicationScope.timeNow}</p>
         </div>
     </body>

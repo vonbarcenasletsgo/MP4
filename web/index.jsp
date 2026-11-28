@@ -10,7 +10,7 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="style.css">
-        <title>Machine Problem 3</title>
+        <title>Machine Problem 4</title>
     </head>
     <body>
 

@@ -9,17 +9,6 @@ and open the template in the editor.
 */
 
 #backgroundBox{
-    /*font-family: sans-serif;
-    padding: 40px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-    margin: 60px auto;
-    text-align: center;
-    width: fit-content;
-    position: relative;
-    top: 50%;
-    bottom: 50%;
-    width: 340px;*/
-    
     font-family: sans-serif;
     text-align: center;
     box-sizing: border-box;
@@ -30,6 +19,8 @@ and open the template in the editor.
     border-top: 6px solid black;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    width: 100%;
+    max-width: 360px;
 }
 
 #backgroundBox label{
@@ -97,6 +88,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 #submitbtn{
