@@ -13,11 +13,14 @@
             <param-value>password123</param-value>
         </init-param>
     </servlet>
+    <servlet>
+        <servlet-name>UserTypeServlet</servlet-name>
+        <servlet-class>UserTypeServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/LoginServlet</url-pattern>
     </servlet-mapping>
-    
     <!-- for character counting servlet sir -->
     <servlet>
         <servlet-name>CharacterCountingServlet</servlet-name>
@@ -41,17 +44,14 @@
         </init-param>
         -->
     </servlet>
-    
     <servlet-mapping>
         <servlet-name>CharacterCountingServlet</servlet-name>
         <url-pattern>/CharacterCountingServlet</url-pattern>
     </servlet-mapping>
-    
     <!--ServletContext-->
     <listener>
         <listener-class>DateHeaderFooterServletContext</listener-class>
     </listener>
-    
     <!--header footer inclusions-->
     <jsp-config>
         <jsp-property-group>
@@ -60,15 +60,16 @@
             <include-coda>footer.jsp</include-coda>
         </jsp-property-group>
     </jsp-config>
-    
+    <servlet-mapping>
+        <servlet-name>UserTypeServlet</servlet-name>
+        <url-pattern>/UserTypeServlet</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>
             30
         </session-timeout>
     </session-config>
-    
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>newindex.jsp</welcome-file>
     </welcome-file-list>
-    
 </web-app>
